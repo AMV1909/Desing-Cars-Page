@@ -1,0 +1,132 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 45%;
+    background-color: white;
+}
+
+.form .title {
+    width: 80%;
+    text-align: center;
+}
+
+.form .title h1 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.field,
+.fullField,
+.btn {
+    margin: 10px;
+}
+
+.field label,
+.fullField label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.field input,
+.field select,
+.fullField input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid white;
+    border-bottom: 2px solid black;
+    padding: 0 10px;
+}
+
+input[type=date]:hover,
+select:hover {
+    cursor: pointer;
+}
+
+.field input:focus,
+.field select:focus,
+.fullField input:focus {
+    outline: none;
+}
+
+.fullField,
+.btn {
+    grid-column: 1 / 3;
+}
+
+.btn {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn button {
+    width: 128px;
+    height: 50px;
+    border: 0;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.btn button:hover {
+    background-color: #333;
+}
+
+.btn button:active {
+    background-color: #555;
+}
+
+.btn p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.message {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.message div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 24px;
+}

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #D9D9D9;
+}
+
+.navbar {
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar div {
+    margin: 0 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 64px;
+    width: 64px;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-right: 48px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 24px;
+}
+
+.navbar a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .listas {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 48px 0;
+}
+
+footer .listas ul {
+    list-style: none;
+}
+
+footer .listas ul li {
+    margin: 12px 0;
+    width: max-content;
+}
+
+footer .listas ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer .listas ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .3s;
+}
+
+footer .listas ul li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+footer .listas ul li a:hover {
+    color: #FFC300;
+}
+
+footer .listas ul li a:hover::after {
+    background-color: #FFC300;
+}
+
+footer .redes {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .redes .links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 48px 0;
+    transition: .3s;
+}
+
+footer .redes .links:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+footer .redes img {
+    filter: invert(50%);
+}
+
+footer .redes img:hover {
+    filter: invert(100%);
+}
+
+footer .redes img::selection {
+    background-color: transparent;
+}

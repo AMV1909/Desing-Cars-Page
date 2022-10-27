@@ -1,0 +1,114 @@
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: black;
+}
+
+.navigation-btn {
+    display: flex;
+    transform: translateY(-160%);
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 96px;
+}
+
+.left img {
+    transform: rotate(90deg);
+}
+
+.right img {
+    transform: rotate(-90deg);
+}
+
+.navigation-btn button {
+    width: 96px;
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-btn img {
+    width: 36px;
+    height: 36px;
+}
+
+.navigation-btn img::selection {
+    background: transparent;
+}
+
+.navigation-btn button:hover {
+    background-color: white;
+}
+
+.info {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    height: 50px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.info:hover {
+    background-color: black;
+    color: white;
+}

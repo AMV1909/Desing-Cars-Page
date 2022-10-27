@@ -1,0 +1,1 @@
+colores = "5E7199 D9D9D9"

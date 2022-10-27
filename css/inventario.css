@@ -1,0 +1,189 @@
+.navbar {
+    background-color: #5E7199;
+}
+
+.content {
+    flex-direction: column;
+    height: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.title {
+    margin: 24px 0;
+}
+
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filter {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inputs div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.select {
+    margin: 12px 24px;
+}
+
+.select select,
+.select input {
+    margin-left: 12px;
+}
+
+.filter label {
+    font-weight: bold;
+}
+
+.filter input {
+    border: none;
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+    background-color: #D9D9D9;
+    padding-left: 2px;
+    width: 64px;
+}
+
+.filter input:focus {
+    outline: none;
+}
+
+.filter select {
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.filter select:focus {
+    outline: none;
+}
+
+.filter option {
+    background-color: white;
+}
+
+.filter button {
+    width: 128px;
+    height: 50px;
+    border: 0;
+    color: white;
+    background-color: #5E7199;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.filter button:hover {
+    background-color: #333;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid black;
+    margin: 24px 48px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-body {
+    border-left: 2px solid black;
+    padding: 24px;
+    width: 80%;
+}
+
+.card img {
+    width: 384px;
+    height: 256px;
+}
+
+.card p {
+    font-weight: bold;
+    display: inline;
+    margin: 0 0 0 24px;
+}
+
+.first {
+    margin-left: 0 !important;
+}
+
+.card-body h2 {
+    margin-bottom: 12px;
+}
+
+.card-body h4 {
+    margin: 12px 0;
+}
+
+.min,
+.max {
+    margin-left: 12px;
+}
+
+.no-data {
+    padding: 24px;
+}
+
+.inventory {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 2px solid black;
+}
+
+.inventory .p {
+    width: 70%;
+    white-space: nowrap;
+}
+
+.inventory .p p {
+    display: block;
+    text-align: start;
+    margin: 0;
+}
+
+.inventory .i p {
+    font-weight: normal;
+}
+
+footer {
+    background-color: #5E7199;
+    color: black;
+}
+
+footer .listas ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+footer .redes img {
+    filter: invert(100%);
+}
